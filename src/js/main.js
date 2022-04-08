@@ -20,7 +20,7 @@ console.log(
   me.name.length <= friend.name.length
 );
 console.log("Детей поровну?)) ", me.kids === friend.kids);
-console.log("Ищет работу Настя? ", friend.work == false);
+console.log("Ищет работу Настя? ", friend.work != true);
 console.log("Мы родственники? ", me.lastName.length === friend.lastName.length);
 
 // obj.name = prompt("Vvedi name");
