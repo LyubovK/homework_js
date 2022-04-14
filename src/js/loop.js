@@ -1,5 +1,12 @@
 let age = prompt("Задание 1. Сколько тебе лет?");
-if (age <= 11) {
+age <= 11
+  ? console.log("Тебе не пора в школу?")
+  : age > 12 && age <= 17
+  ? console.log("Підліток")
+  : age > 18 && age <= 59
+  ? console.log("Дорослий")
+  : console.log("Пенсіонер");
+/*if (age <= 11) {
   console.log("Тебе не пора в школу?");
 } else if (age > 12 && age <= 17) {
   console.log("Підліток");
@@ -7,7 +14,7 @@ if (age <= 11) {
   console.log("Дорослий");
 } else {
   console.log("Пенсіонер");
-}
+}*/
 
 let spec = prompt("Задание 2. Введите любое число от 0 до 9");
 let myText = "Спец символ: ";
