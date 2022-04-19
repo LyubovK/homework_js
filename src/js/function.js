@@ -1,3 +1,40 @@
+function Calc(first, second, op) {
+  let res;
+  if (!isNaN(first) && !isNaN(second)) {
+    switch (op) {
+      case "/":
+        res = first / second;
+        if (second != 0) {
+          res = first / second;
+          break;
+        } else {
+          console.log("на ноль делить нельзя");
+          break;
+        }
+      case "*":
+        res = first * second;
+        break;
+      case "-":
+        res = first - second;
+        break;
+      case "+":
+        res = first + second;
+        break;
+      default:
+        alert('Ввели не корректный знак операции, нужно "+,-,*,/"');
+    }
+  } else {
+    console.log("Не число");
+  }
+  return res;
+}
+
+first = Number(prompt("Введи первое число"));
+second = Number(prompt("Введи второе число"));
+op = prompt("Что нужно сделать? -,+,*,/");
+alert(Calc(first, second, op));
+
+console.log("HOMEWORK:");
 /*--- 1. Напиши всі можливі варіанти створення функцій. ---*/
 
 function showMessage() {}
@@ -106,7 +143,7 @@ function lastTask(min, max) {
     }
   }
 }
-console.log("last", lastTask(5, 497));
+lastTask(5, 497);
 
 /*let userName = "Вася";
 
