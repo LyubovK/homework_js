@@ -72,7 +72,7 @@ time = {
   minute: "",
   second: "",
   info: function () {
-    console.log(`
+    alert(`
       ${this.hour}:${this.minute}:${this.second}
           `);
   },
@@ -91,9 +91,7 @@ time = {
       this.minute = value % 60;
       this.hour += parseInt(value / 60);
     } else if (value >= 75) {
-      console.log(
-        "Вы ввели не корректные данные, минут должно быть не больше 75"
-      );
+      alert("Вы ввели не корректные данные, минут должно быть не больше 75");
     } else {
       this.minute = value;
     }
@@ -104,9 +102,7 @@ time = {
       this.second = value % 60;
       this.minute += parseInt(value / 60);
     } else if (value >= 150) {
-      console.log(
-        "Вы ввели не корректные данные, секунд должно быть не больше 150"
-      );
+      alert("Вы ввели не корректные данные, секунд должно быть не больше 150");
     } else {
       this.second = value;
     }
@@ -114,9 +110,12 @@ time = {
   },
 };
 time.info();
-time.changeHourse(23);
-time.changeMinute(70);
-time.changeSecond(145);
+let h = Number(prompt("введи часы"));
+let m = Number(prompt("введи минуты"));
+let s = Number(prompt("введи секунды"));
+time.changeHourse(h);
+time.changeMinute(m);
+time.changeSecond(s);
 time.info();
 
 function nod(n, d) {
