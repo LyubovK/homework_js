@@ -169,10 +169,14 @@ function Multiply(fn, fd, sn, sd) {
   let finDev = fd * sd;
   return Frac(finNum, finDev);
 }
-console.log(Pluc(2, 3, 4, 5));
-console.log(Minus(4, 5, 2, 3));
-console.log(Divide(2, 3, 4, 5));
-console.log(Multiply(2, 3, 4, 5));
+a = Number(prompt("Введи знаменатель первой дроби"));
+b = Number(prompt("Введи числитель первой дроби"));
+c = Number(prompt("Введи знаменатель второй дроби"));
+d = Number(prompt("Введи числитель второй дроби"));
+console.log(Pluc(a, b, c, d));
+console.log(Minus(a, b, c, d));
+console.log(Divide(a, b, c, d));
+console.log(Multiply(a, b, c, d));
 
 /*let car = {
     model: "Cybertruck",
