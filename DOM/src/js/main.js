@@ -60,14 +60,6 @@ close.onclick = function () {
 };
 
 let lightsBtn = document.querySelector(".btn-next");
-// let lights = document.querySelector(".lights-list__item");
-// let lightsList = document.querySelector(".lights-list");
-// arr = ["red", "orange", "green"];
-// console.log(lights.nextElementSibling);
-// arr.forEach((li, i) => {
-//   lightsList.innerHTML += `<li class="lights-list__item ${li}"></li>`;
-//   //arr[i] = lights;
-// });
 
 let i = -1;
 lightsBtn.onclick = function trafficLight() {
